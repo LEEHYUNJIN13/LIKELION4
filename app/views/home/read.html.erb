@@ -1,0 +1,8 @@
+<br><br>
+<div class = "container">
+<h1>게시판 목록</h1><br>
+<% @posts.each do |x| %>
+제목 : <%= x.db_title %> <br>
+내용 : <%= x.db_content %>
+<hr>
+<%end%>
